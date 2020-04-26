@@ -5,7 +5,7 @@ maintainers:
 semanticClass: theme.dracula
 dracula:
   base:
-    - &BG        '#282A36'
+    - &BG        '#263238'
     - &FG        '#F8F8F2'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
@@ -43,10 +43,10 @@ dracula:
     - &WHITE         '#FFFFFF'
     - &TAB_DROP_BG   '#44475A70'
     # UI Variants
-    - &BGLighter     '#424450'
-    - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
+    - &BGLighter     '#263238'
+    - &BGLight       '#263238' # HSV (230   , 25.71, 27.45)
+    - &BGDark        '#263238' # HSV (234.55, 25   , 17.25)
+    - &BGDarker      '#263238' # HSV (234.55, 25   , 13   )
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
@@ -76,10 +76,10 @@ colors:
   contrastActiveBorder:                                                         # An extra border around active elements to separate them from others for greater contrast
 
   # Base Colors
-  focusBorder: *COMMENT                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
+  focusBorder: *BG                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
   foreground: *FG                                                               # Overall foreground color. This color is only used if not overridden by a component
   widget.shadow:                                                                # Shadow color of widgets such as Find/Replace inside the editor
-  selection.background: *PURPLE                                                 # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
+  selection.background: *BG                                                 # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
   errorForeground: *RED                                                         # Overall foreground color for error messages (this color is only used if not overridden by a component)
 
   # Button Control
@@ -142,7 +142,7 @@ colors:
   activityBar.foreground: *FG                                                   # Activity bar foreground color (for example used for the icons)
   activityBar.border:                                                           # Activity Bar border color with the Side Bar
   activityBar.activeBorder: !alpha [*PINK, 80]                                  # Activity Bar indicator color
-  activityBar.activeBackground: !alpha [*PURPLE, 10]                            # Activity Bar indicator background color
+  activityBar.activeBackground: !alpha [*BG, 10]                            # Activity Bar indicator background color
   activityBarBadge.background: *PINK                                            # Activity notification badge background color
   activityBarBadge.foreground: *FG                                              # Activity notification badge foreground color
 
